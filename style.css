@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0rem;
+  padding: 0rem;
+  font-family: 'Poppins';
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+body, html {
+  height: 100%;
+}
+
+.left{
+  background-color:#282e44;
+}
+
+h2{
+  color: white;
+}
+
+.right{
+  background-color:#02549e;
+}
+
+.right img{
+  height: 10rem;
+  width: 10rem;
+}
+.task_item{
+  color: black;
+}
+
+
+@media(min-width:350px){
+  main{
+    display: flex;
+    flex-direction: column;
+    background-color:#02549e;
+  }
+  h2{
+    font-size: 1.8rem;
+  }
+  .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .heading{
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    height: 8vh;
+  }
+  .notes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-grow: 1;
+    width: 80%;
+    gap: 1rem;
+  }
+  .note{
+    background-color: white;
+    border-radius:12px;
+    padding: 1rem;
+    width: 90%;
+    cursor: pointer;
+  }
+
+  .note h4{
+    color: #02549e;
+  }
+  hr{
+    width: 100%;
+  }
+  #newNote{
+    padding: 1rem 1rem;
+    margin: 3rem 0rem 2rem;
+    width: 10rem;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+
+
+  /* right */
+  .right{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right img{
+    height: 15rem;
+    width: 15rem;
+    margin-bottom: 2rem;
+  }
+
+  .right h4,.right p{
+    color: white;
+    padding: 0.5rem;
+  }
+
+  .two{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .three{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    /* padding: 1rem; */
+    width: 100%;
+    height: 100vh;
+  }
+
+  .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    /* padding: 1.7rem 1rem; */
+    padding: 1rem 0rem ;
+    width: 100%;
+    height: 10vh;
+    gap: 0.6rem;
+  }
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.6rem;
+    width: 90%;
+  }
+
+  .buttons button{
+    padding: 0.5rem;
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
+    width: 7rem;
+  }
+  #addTask{
+    background-color: #9bc1bc;
+  }
+  #deleteNote{
+    background-color: #ed6a5a;
+  }
+
+  #Submit{
+    background-color: #f4f1bb;
+  }
+
+  .textSpace{
+    width: 80%;
+    /* border: 1px solid black; */
+    height: 70vh;
+    margin-top: 2rem;
+    background-color: white;
+    padding: 1rem;
+    overflow: auto;
+    border-radius: 12px;
+  }
+
+  #edit_text{
+    width: 90%;
+    height: 15rem;
+    border: none;
+    outline: none;
+    border: 1px solid #02549e;
+    padding: 1rem;
+  }
+
+  .textSpace p{
+    color: black;
+  }
+
+
+
+
+  .input{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 1rem;
+  }
+  #Notetext{
+    padding:0.5rem;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+  }
+  #text_area{
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 1rem;
+  }
+  #createNote{
+    padding: 1rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+  }
+
+  .task_div{
+    width: 60%;
+    height: 10rem;
+    position: fixed;
+    bottom: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;    
+  }
+  
+  .task_div .input_task_div{
+    border: none;
+    width: 80%;
+    background-color: #9bc1bc;
+    border-radius: 20px;
+    padding:3rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .task_div .input_task_div input{
+    border: none;
+    width:100%;
+    border-bottom: 2px solid black;
+    outline: none;
+    background-color: #9bc1bc;
+    font-size: 1.1rem;
+    padding:0.4rem;
+  }
+
+  .task_div .button_taskdiv{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .button_taskdiv button{
+    padding: 1rem 0rem;
+    width: 7rem;
+    font-weight: bold;
+    border-radius: 12px;
+    border:none;
+    outline:none;
+    background-color: #9bc1bc;
+  }
+  
+}
+
+@media(min-width:700px){
+  main{
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+
+  .input{
+    width: 60%;
+  }
+  .top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+    padding-bottom: 1.1rem;
+  }
+  .top h3{
+    margin-left: 1rem;
+    font-size: 1.6rem;
+  }
+  .buttons{
+    width: 60%;
+    margin-right: 0.2rem;
+  }
+  #edit_text{
+    height: 10rem;
+  }
+  .task_div{
+    width: 40%;
+  }
+
+  .task_div .input_task_div input{
+    width: 90%;
+  }
+  .task_div .button_taskdiv button{
+    width: 30%;
+  }
+}
+
+
